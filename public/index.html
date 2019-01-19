@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		html,
+		body,
+		canvas {
+			display: block;
+
+			margin: 0;
+			padding: 0;
+
+			width: 100%;
+			height: 100%;
+
+			background: #121212;
+			color: #eee;
+		}
+
+		canvas {
+			position: absolute;
+		}
+
+		.input-wrapper {
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		h2 {
+			z-index: 1;
+		}
+
+		input {
+			border: none transparent;
+			outline: none;
+
+			background-color: rgba(255,255,255,0.1);
+
+			border-radius: 4px;
+			padding: 10px;
+
+			font-size: 30px;
+			text-align: center;
+
+			width: 200px;
+			z-index: 1;
+
+			color: #eee;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="canvas"></canvas>
+
+	<div class="input-wrapper">
+		<input id="code-input" type="text" placeholder="game code" autofocus></input>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+
+	<script src="input.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
